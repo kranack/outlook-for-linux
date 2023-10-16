@@ -48,7 +48,7 @@ function extractYargConfig(configObject, appVersion) {
       },
       appIcon: {
         default: "",
-        describe: "Teams app icon to show in the tray",
+        describe: "Outlook app icon to show in the tray",
         type: "string",
       },
       appIconType: {
@@ -70,7 +70,7 @@ function extractYargConfig(configObject, appVersion) {
         type: "number",
       },
       appTitle: {
-        default: "Microsoft Teams",
+        default: "Microsoft Outlook",
         describe: "A text to be suffixed with page title",
         type: "string",
       },
@@ -244,7 +244,7 @@ function extractYargConfig(configObject, appVersion) {
       },
       meetupJoinRegEx: {
         default:
-          "^https://teams.(microsoft|live).com/.*(?:meetup-join|channel|chat)",
+          "^https://outlook.microsoft.com/.*(?:meetup-join|channel|chat)",
         describe: "Meetup-join and channel regular expression",
         type: "string",
       },
@@ -273,7 +273,7 @@ function extractYargConfig(configObject, appVersion) {
         type: "boolean",
       },
       partition: {
-        default: "persist:teams-4-linux",
+        default: "persist:outlook-4-linux",
         describe: "BrowserWindow webpreferences partition",
         type: "string",
       },
@@ -327,8 +327,8 @@ function extractYargConfig(configObject, appVersion) {
         type: "boolean",
       },
       url: {
-        default: "https://teams.microsoft.com/v2",
-        describe: "Microsoft Teams URL",
+        default: "https://outlook.office.com",
+        describe: "Microsoft Outlook URL",
         type: "string",
       },
       useMutationTitleLogic: {

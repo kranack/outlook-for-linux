@@ -1,7 +1,7 @@
 # Custom CSS
 
 This folder contains all the handlers and helpers to be able to provide custom
-css to teams-for-linux
+css to outlook-for-linux
 
 This is applied using config options.
 

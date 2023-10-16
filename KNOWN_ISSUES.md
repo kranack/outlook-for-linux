@@ -22,12 +22,12 @@ stored data in the configuration directory usually resolves the problem.
 Below is a list of default configuration folder locations for different
 installation types, along with the commands to remove the data:
 
-|     Type of install      |                                   Location                                    |                                   Clean-up command                                   |
-| :----------------------: | :---------------------------------------------------------------------------: | :----------------------------------------------------------------------------------: |
-|     Vanilla install      |                          `~/.config/teams-for-linux`                          |                          `rm -rf ~/.config/teams-for-linux`                          |
-|           snap           |           `~/snap/teams-for-linux/current/.config/teams-for-linux/`           |           `rm -rf ~/snap/teams-for-linux/current/.config/teams-for-linux/`           |
-| --user installed flatpak | `~/.var/app/com.github.IsmaelMartinez.teams_for_linux/config/teams-for-linux` | `rm -rf ~/.var/app/com.github.IsmaelMartinez.teams_for_linux/config/teams-for-linux` |
-|       From source        |                             `~/.config/Electron/`                             |                             `rm -rf ~/.config/Electron/`                             |
+| Type of install |                                    Location                                     | Clean-up command |
+|:-------------:|:-------------------------------------------------------------------------------:|:-----:|
+| Vanilla install |                          `~/.config/outlook-for-linux`                          | `rm -rf ~/.config/outlook-for-linux` |
+| snap |          `~/snap/outlook-for-linux/current/.config/outlook-for-linux/`          |  `rm -rf ~/snap/outlook-for-linux/current/.config/outlook-for-linux/` |
+| --user installed flatpak | `~/.var/app/com.github.mahmoudbahaa.outlook_for_linux/config/outlook-for-linux` | `rm -rf ~/.var/app/com.github.IsmaelMartinez.outlook_for_linux/config/outlook-for-linux` |
+| From source |                              `~/.config/Electron/`                              | `rm -rf ~/.config/Electron/` |
 
 ## No rendering fonts correctly
 
@@ -57,6 +57,7 @@ with your locale’s dictionary. See the instructions at
 [Atom's spell-check README](https://github.com/atom/spell-check#debian-ubuntu-and-mint).
 Check Issue [#154](https://github.com/IsmaelMartinez/teams-for-linux/issues/154)
 if you experience locale detection problems.
+Some users have reported a blank page on login (with the title `Microsoft Outlook - initializing`).
 
 ## No Desktop Notifications
 

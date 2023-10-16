@@ -76,16 +76,16 @@ menubar | A value controls the menu bar behaviour | _auto_, visible, hidden |
 As an example, to disable persistence, you can run the following command:
 
 ```bash
-teams-for-linux --partition nopersist
+outlook-for-linux --partition nopersist
 ```
 
 Alternatively, you can use a `config.json` file with your configuration options.
 Place this file in the appropriate location based on your installation type:
 
-- Vanilla: `~/.config/teams-for-linux/config.json`
-- Snap: `~/snap/teams-for-linux/current/.config/teams-for-linux/config.json`
+- Vanilla: `~/.config/outlook-for-linux/config.json`
+- Snap: `~/snap/outlook-for-linux/current/.config/outlook-for-linux/config.json`
 - Flatpak:
-  `~/.var/app/com.github.IsmaelMartinez.teams_for_linux/config/teams-for-linux/config.json`
+  `~/.var/app/com.github.kranack.outlook_for_linux/config/outlook-for-linux/config.json`
 
 [yargs](https://www.npmjs.com/package/yargs) supports multiple configuration
 methods—refer to their documentation if you prefer using a configuration file
@@ -121,12 +121,12 @@ Example:
 
 # Additional Documentation
 
-The Teams for Linux project includes several extra features that enhance its
+The Outook for Linux project includes several extra features that enhance its
 functionality. For detailed instructions on each feature, please refer to the
 corresponding documentation:
 
-- **Multiple Teams Instances:**  
-  If you want to run multiple instances of Teams for Linux simultaneously, refer
+- **Multiple Outook Instances:**  
+  If you want to run multiple instances of Outook for Linux simultaneously, refer
   to the [Multiple Instances README](MULTIPLE_INSTANCES.md).
 
 - **Custom Backgrounds:**  

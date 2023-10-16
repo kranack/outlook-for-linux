@@ -219,9 +219,9 @@ function restoreWindow() {
 }
 
 function processArgs(args) {
-  const v1msTeams = /^msteams:\/l\/(?:meetup-join|channel|chat)/;
+  const v1msTeams = /^msoutlook:\/l\/(?:meetup-join|channel|chat)/;
   const v2msTeams =
-    /^msteams:\/\/teams\.microsoft\.com\/l\/(?:meetup-join|channel|chat)/;
+    /^msoutlook:\/\/outlook\.microsoft\.com\/l\/(?:meetup-join|channel|chat)/;
   console.debug("processArgs:", args);
   for (const arg of args) {
     console.debug(
@@ -235,14 +235,14 @@ function processArgs(args) {
       return arg;
     }
     if (v1msTeams.test(arg)) {
-      console.debug("A url argument received with msteams v1 protocol");
+      console.debug("A url argument received with msoutlook v1 protocol");
       window.show();
       return config.url + arg.substring(8, arg.length);
     }
     if (v2msTeams.test(arg)) {
-      console.debug("A url argument received with msteams v2 protocol");
+      console.debug("A url argument received with msoutlook v2 protocol");
       window.show();
-      return arg.replace("msteams", "https");
+      return arg.replace("msoutlook", "https");
     }
   }
 }

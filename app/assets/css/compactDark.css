@@ -1,9 +1,9 @@
 /* 
-From https://userstyles.org/styles/164546/compact-microsoft-teams-for-dark-theme
+From https://userstyles.org/styles/164546/compact-microsoft-outlook-for-dark-theme
 */
 
 /*
- * microsoft_teams_compact_dark.css
+ * microsoft_outlook_compact_dark.css
  * Generated on 2018-10-23 23:11:38
  */
 
@@ -144,7 +144,7 @@ thread .ts-message .merge-bubble .message-actions-container,
 /**** compact.css ****/
 
 /*   Compact the height of lines by hiding the names/timestamps 
-    (This style also applies to the "teams" chats, but in this case
+    (This style also applies to the "outlook" chats, but in this case
      it breaks things in threads were alignment/colors are different
      and visual result is not very clean. )
 */

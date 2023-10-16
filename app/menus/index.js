@@ -82,7 +82,7 @@ class Menus {
 
   about() {
     const appInfo = [];
-    appInfo.push(`teams-for-linux@${app.getVersion()}\n`);
+    appInfo.push(`outlook-for-linux@${app.getVersion()}\n`);
     for (const prop in process.versions) {
       if (
         prop === "node" ||
@@ -163,19 +163,19 @@ class Menus {
   }
 
   saveSettings() {
-    ipcMain.once("get-teams-settings", saveSettingsInternal);
-    this.window.webContents.send("get-teams-settings");
+    ipcMain.once("get-outlook-settings", saveSettingsInternal);
+    this.window.webContents.send("get-outlook-settings");
   }
 
   restoreSettings() {
-    ipcMain.once("set-teams-settings", restoreSettingsInternal);
+    ipcMain.once("set-outlook-settings", restoreSettingsInternal);
     const settingsPath = path.join(
       app.getPath("userData"),
-      "teams_settings.json"
+      "outlook_settings.json"
     );
     if (fs.existsSync(settingsPath)) {
       this.window.webContents.send(
-        "set-teams-settings",
+        "set-outlook-settings",
         JSON.parse(fs.readFileSync(settingsPath))
       );
     } else {
@@ -242,7 +242,7 @@ class Menus {
 
 function saveSettingsInternal(_event, arg) {
   fs.writeFileSync(
-    path.join(app.getPath("userData"), "teams_settings.json"),
+    path.join(app.getPath("userData"), "outlook_settings.json"),
     JSON.stringify(arg)
   );
   dialog.showMessageBoxSync(this.window, {
