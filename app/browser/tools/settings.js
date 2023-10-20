@@ -1,13 +1,11 @@
 const ReactHandler = require("./reactHandler");
 
 let _Settings_config = new WeakMap();
-let _Settings_ipcRenderer = new WeakMap();
 class Settings {
 	init(config, ipcRenderer) {
 		_Settings_config.set(this, config);
-		_Settings_ipcRenderer.set(this, ipcRenderer);
-		this.ipcRenderer.on('get-outlook-settings', retrieve);
-		this.ipcRenderer.on('set-outlook-settings', restore);
+		ipcRenderer.on('get-outlook-settings', retrieve);
+		ipcRenderer.on('set-outlook-settings', restore);
 	}
 
   get config() {

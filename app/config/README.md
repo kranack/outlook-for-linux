@@ -121,6 +121,7 @@ Example:
 
 # Additional Documentation
 
+<<<<<<< HEAD
 The Outook for Linux project includes several extra features that enhance its
 functionality. For detailed instructions on each feature, please refer to the
 corresponding documentation:
@@ -140,3 +141,5 @@ corresponding documentation:
 - **Custom CA Certs:**  
   To retrieve custom CA certificates fingerprints, please see the
   [Certificate README](../certificate/README.md).
+=======
+>>>>>>> 910d1cd (Remove un-needed features:)

@@ -60,9 +60,6 @@
   },
   "build": {
     "appId": "outlook-for-linux",
-    "asarUnpack": [
-      "node_modules/spellchecker/vendor/hunspell_dictionaries"
-    ],
     "protocols": {
       "name": "msoutlook",
       "schemes": [
@@ -128,6 +125,7 @@
         "screen-inhibit-control",
         "upower-observe",
         "audio-record",
+        "wayland",
         "hardware-observe",
         "network-bind",
         "network-manager-observe",
