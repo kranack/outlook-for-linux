@@ -14,6 +14,8 @@ const Tray = require("./tray");
 const { SpellCheckProvider } = require("../spellCheckProvider");
 const connectionManager = require("../connectionManager");
 
+
+let _Menus_onSpellCheckerLanguageChanged = new WeakMap();
 class Menus {
   constructor(window, configGroup, iconPath) {
     this.window = window;

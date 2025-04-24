@@ -15,8 +15,15 @@
   "author": {
     "name": "Damien Calesse",
     "email": "damien.calesse@gmail.com",
-    "url": "https://github.com/kranack/"
+    "url": "https://github.com/kranack"
   },
+  "contributors": [
+    {
+      "name": "Mahmoud Bahaa",
+      "email": "mahmoud.bahaa.eg@gmail.com",
+      "url": "https://github.com/mahmoudbahaa"
+    }
+  ],
   "license": "GPL-3.0-or-later",
   "scripts": {
     "postinstall": "electron-builder install-app-deps",
